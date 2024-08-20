@@ -9,7 +9,13 @@ const config: CapacitorConfig = {
     cleartext: true // Permite el tráfico HTTP sin cifrar
   },
   plugins: {
-
+    PushNotifications: {
+      presentationOptions: ['badge', 'sound', 'alert']
+    },
+    // Configuración del esquema URL del plugin App
+    App: {
+      deepLinking: true
+    }
   }
 };
 
