@@ -24,7 +24,7 @@ const Signup: React.FC = () => {
         <IonInput placeholder="Email" />
 
         <IonLabel>Código de Referido</IonLabel>
-        <IonInput value={referralCode || ''} placeholder="Código de Referido" disabled />
+        <IonInput value={referralCode || ''} placeholder="Código de Referido" />
 
         <IonButton expand="block">Registrar</IonButton>
       </form>
