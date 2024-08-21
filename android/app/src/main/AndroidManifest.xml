@@ -26,9 +26,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data 
-                android:scheme="http" 
-                android:host="localhost:8100" 
-                android:path="/signup/step1"
+                android:scheme="https" 
+                android:host="main--deep-links-example-android.netlify.app" 
+                android:path="/signup"
                 />
             </intent-filter>
 
