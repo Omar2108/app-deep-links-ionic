@@ -7,7 +7,7 @@ const ShareReferralLink: React.FC = () => {
     const referralCode = 'test123456'
 
     const shareLink = async () => {
-        const shareUrl = `http://localhost:8100/signup?referral_code=${referralCode}`;
+        const shareUrl = `https://main--deep-links-example-android.netlify.app/signup?referral_code=${referralCode}`;
 
         try {
             await Share.share({
