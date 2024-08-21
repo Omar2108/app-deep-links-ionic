@@ -48,7 +48,9 @@ const App: React.FC = () => {
           <Route exact path="/home">
             <Home />
           </Route>
-          <Route path="/signup" component={Signup} />
+          <Route exact path="/signup">
+            <Signup />
+          </Route>
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
