@@ -6,8 +6,8 @@ const AppUrlListener: React.FC<any> = () => {
     let history = useHistory();
     useEffect(() => {
       App.addListener('appUrlOpen', (event: URLOpenListenerEvent) => {
-        // Example url: http://localhost:8100/signup/step1
-        // slug = /signup/step1
+        // Example url: http://localhost:8100/signup
+        // slug = /signup
         const slug = event.url.split(':8100').pop();
         if (slug) {
           history.push(slug);
